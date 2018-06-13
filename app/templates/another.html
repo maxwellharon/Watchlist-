@@ -1,0 +1,20 @@
+{% import 'macros.html' as macro%}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    {% if title %}
+    <title>{{ title }}</title>
+    {%else%}
+    <title>Welcome to the best Movie Review website</title>
+    {%endif%}
+
+  </head>
+  <body>
+    <!-- Popular movie section  -->
+    <h3> Popular Movies on Another Page</h3>
+  <ul>
+      {{ macro.displayMovieList(popular_movies)}}
+  </ul>
+  </body>
+</html>
